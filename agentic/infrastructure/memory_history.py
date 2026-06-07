@@ -38,7 +38,7 @@ class MemoryHistoryManager(IHistoryManager):
         session.messages.append(message)
         return message
 
-    def get_history(self, session_id: str, limit: int = 20) -> List[dict]:
+    def get_history(self, session_id: str, limit: int = 10) -> List[dict]:
         session = self._sessions.get(session_id)
         if not session:
             return []

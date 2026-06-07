@@ -55,7 +55,7 @@ TOOLS = [
         'type': 'function',
         'function': {
             'name': 'get_student_profile',
-            'description': "Get the student's bio data and academic profile.",
+            'description': "Get the student's bio data and academic profile. This uses the authenticated session; NO GUID or ID is required.",
             'parameters': {
                 'type': 'object',
                 'properties': {},
@@ -66,7 +66,7 @@ TOOLS = [
         'type': 'function',
         'function': {
             'name': 'get_student_dashboard',
-            'description': "Get a comprehensive summary of fees, programme, and level.",
+            'description': "Get a summary of fees, programme, and level. This uses the authenticated session; NO GUID or ID is required.",
             'parameters': {
                 'type': 'object',
                 'properties': {},
@@ -77,7 +77,7 @@ TOOLS = [
         'type': 'function',
         'function': {
             'name': 'get_student_ledger',
-            'description': "Get detailed fee debits, payments made, and outstanding balances.",
+            'description': "Get detailed fee debits (breakdown), payments, and outstanding balances. This uses the authenticated session; NO GUID or ID is required.",
             'parameters': {
                 'type': 'object',
                 'properties': {},
